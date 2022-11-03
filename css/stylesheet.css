@@ -1,0 +1,92 @@
+/**, *::before, *::after
+{
+    box-sizing: border-box;
+    font-family: fantasy;
+}*/
+body
+{
+    background-image: url("../images/underwater.jpeg");
+    padding: 0;
+    margin: 0;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 300vh;
+   
+
+}
+
+.punchBox
+{
+    display: grid;
+    
+    
+}
+
+#number
+{
+    background-color: beige;
+}
+
+
+.container
+{
+    width: 800px;
+    height: 400px;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    display: center;
+
+}
+
+.btn-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: auto;
+}
+
+.btn
+{
+    background-color: blue;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 40px;
+    filter: blur(10px);
+}
+
+#block
+{
+    background-color: blue;
+}
+
+#rectangle 
+{
+    font-size: 40px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+
+.openText
+{
+    display: center;
+    background-color: blue;
+    color: aliceblue;
+}
+#riddle
+{
+    background-color: black;
+    color: antiquewhite;
+}
+#Correct
+{
+    background-color: black;
+    color: antiquewhite;
+    display: none;
+}
+
+
+
+

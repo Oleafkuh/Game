@@ -3,7 +3,7 @@
 // if userinpt = nesw  --> htmlpage
 //
 
-let punch = 0; 
+var punch = 0; 
 
 console.log(window);
 
@@ -31,9 +31,15 @@ function changePageHome()
 
 
 
-function addPercentage(percent)
+
+function addPower()
 {
-    punch += percent; 
+    punch = punch + 25;  
+}
+
+function displayPower()
+{
+    console.log(punch); 
 }
 
 function correctAnswer()
@@ -41,7 +47,38 @@ function correctAnswer()
     let d = document.getElementById("Correct");
     d.style.display = "block"; 
 }
+function cA2()
+{
+    let d = document.getElementById("Correct2");
+    d.style.display = "block"; 
+}
 
+
+function wrongAnswer()
+{
+    let w = document.getElementById("Wrong");
+    w.style.display = "block";
+}
+function wA2()
+{
+    let w = document.getElementById("Wrong2");
+    w.style.display = "block";
+}
+
+function displayAlert()
+{
+    sessionStorage.setItem('punch', JSON.stringify(punch));
+    sessionStorage.punch = Number(sessionStorage.punch) + 25;
+    console.log(sessionStorage.getItem('punch'));
+    /*if (sessionStorage.punch) {
+        sessionStorage.punch = Number(sessionStorage.punch) + 25;
+      } 
+      document.getElementById("punchText").innerHTML = sessionStorage.punch;
+    
+    console.log(punch); */
+    alert("25% power was added!"); 
+
+}
 
 function unBlur()
 {

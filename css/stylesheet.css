@@ -20,7 +20,7 @@ body
 .punchBox
 {
     display: grid;
-    
+   
     
 }
 
@@ -36,8 +36,7 @@ body
     height: 400px;
     max-width: 80%;
     padding: 10px;
-    border-radius: 5px;
-    display: center;
+    
 
 }
 
@@ -54,7 +53,7 @@ body
     border-radius: 5px;
     color: aliceblue;
     font-size: 40px;
-    filter: blur(10px);
+    /*filter: blur(10px);*/
 }
 
 #block
@@ -86,6 +85,32 @@ body
     color: antiquewhite;
     display: none;
 }
+#Correct2
+{
+    background-color: black;
+    color: antiquewhite;
+    display: none;
+
+}
+#Wrong
+{
+    background-color: black;
+    color: antiquewhite;
+    display: none;
+}
+#Wrong2
+{
+    background-color: black;
+    color: antiquewhite;
+    display: none;
+}
+
+#goBack
+{
+    background-color: darkslategray;
+    color: bisque;
+}
+
 
 
 

@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>East</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+<style>
+    body
+    {
+        background-image: url("../images/coral.jpeg");
+    }
+    
+    
+  
+</style>
 <body>
     <h1>Coral</h1>
     <div class="openText">
@@ -18,28 +27,35 @@
         <div class ="conatiner">
             
             <div id="option-buttons" class="btn-grid">
-                <button class="btn" >i'm good (swim away)</button>
+                <button class="btn" onclick="changePageHome()">i'm good (swim away)</button>
                 <button class="btn" onclick="correctAnswer()"> sure!</button>
                 
             </div>
 
             <div id="Correct">
                 <h1>
-                    "why do shrimp never give anything to charity, bc they're shelffish hahahahahh" 
+                    "why do shrimp never give anything to charity, because they're selfish hahahahahh" 
 
                 </h1>
             
                 <div id="option-buttons" class="btn-grid">
                     <button class="btn" >(be nice) that was funny :D</button>
-                    <button class="btn" >(get angry!!) that was horrendous</button>
+                    <button class="btn"  onclick="cA2()">(get angry!!) that was horrendous</button>
                    
                 </div>
                 </div>
 
+                <div id="Correct2">
+                    <h1 onmousedown="displayAlert()">
+                        Being angry has given you more motivation to defeat the fisherman
+                    </h1>
+                    
+                
+                 </div>
+
         
 
-    <p1>ready to fight the fisherman?</p1> 
-    <button onclick="changePageHome()">go back</button>
+                <button id="goBack" onclick="changePageHome()">go back</button>
 
     
     <script src="../js/function.js">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>South</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
@@ -35,24 +35,38 @@
 <div class ="conatiner">
     <div id="text">Text</div>
     <div id="option-buttons" class="btn-grid">
-        <button class="btn" >shellsea</button>
+        <button class="btn" onclick="wrongAnswer()">shellsea</button>
         <button class="btn"  onclick="correctAnswer()">seashell</button>
-        <button class="btn" >chelsea</button>
+        <button class="btn" onclick="wrongAnswer()">chelsea</button>
+    </div>
+
+    
+    <div id="Wrong">
+        <h1>Wrong</h1>
+       
+       
     </div>
 
     <div id="Correct">
         <h1>Correct! Do you want this potion that will give you totally awesome powers?</h1>
     
         <div id="option-buttons" class="btn-grid">
-            <button class="btn" >yes</button>
-            <button class="btn" id="correctBtn" onclick="changePageHome()">no</button>
+            <button class="btn" onclick="displayAlert()">yes</button>
+            <button class="btn" onclick="wA2()">no</button>
            
         </div>
     </div>
 
+    <div id="Wrong2">
+        <h1>oh ok </h1>
+        
+        
 
-<p1>ready to fight the fisherman?</p1> 
-    <button onclick="changePageHome()">go back</button>
+    </div>
+
+
+
+    <button id="goBack" onclick="changePageHome()">go back</button>
 
     <script src="../js/function.js">
 

@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>North</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+<style>
+    body
+    {
+        background-image: url("../images/sea.jpeg");
+    }
+    
+</style>
 <body>
-    <h1>Opean sea / shark</h1>
+    <h1>You swim into the giant opean ocean. Mr.Shark approaches you with hunger. </h1>
+    <div id="riddle">
+        <h1>"mmmmmm I love shrimp fried rice"</h1>
+    </div>
 
-    <p1>ready to fight the fisherman?</p1> 
-    <button onclick="changePageHome()">go back</button>
+    <div class ="conatiner">
+            
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn" onclick="changePageHome()">swim away</button>
+            <button class="btn" onclick="correctAnswer()">rant to Mr.Shark</button>
+            
+        </div>
+
+        
+    <div id="Correct">
+        <h1></h1>
+    
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn" onclick="displayAlert()">yes</button>
+            <button class="btn" onclick="wA2()">no</button>
+           
+        </div>
+    </div>
+
+    <button id="goBack" onclick="changePageHome()">go back</button>
 
     
     <script src="../js/function.js">

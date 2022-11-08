@@ -4,26 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>West</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
+    <style>
+        body
+        {
+            background-image: url("../images/cave.jpeg");
+        }
+        
+        
+      
+    </style>
 
 
-    <h1>Cave with eel </h1>
+    
+
+    <div class="openText"><h1></h1>
+        <h1>You swim into a rocky cave its dark and spooky. An eel slithers up to talk to you.</h1>
+        </div>
+
+        <div id="riddle">
+            <h1>"If you're looking for more power you should touch my tail"</h1>
+        </div>
+
+
     <div class ="conatiner">
-        <div id="text">Text</div>
+        <div id="text"></div>
         <div id="option-buttons" class="btn-grid">
-            <button class="btn" onclick="changePageN()"class="btn">North</button>
-            <button class="btn" onclick="changePageS()">South</button>
-            <button class="btn" onclick="changePageE()">East</button>
-            <button class="btn" onclick="changePageW()">West</button>
+            <button class="btn" onclick="correctAnswer()">(take the risk) sure</button>
+            <button class="btn"onclick="wrongAnswer()" >(play it safe) no thanks</button>
         </div>
     </div>
 
+    <div id="Correct">
+        <h1>Enjoy my electricity</h1>
+        <h1>The electricity gives extra power to your punch!</h1>
+    
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn" onclick="displayAlert()" ondblclick="changePageHome()">thanks</button>
+           
+           
+        </div>
+    </div>
 
-    <p1>ready to fight the fisherman?</p1> 
-    <button onclick="changePageHome()">go back</button>
+    <div id="Wrong">
+        <h1>...</h1>
+        <h1>Nothing happens</h1>
+        
+    
+      
+    </div>
+
+
+    
+    <button id="goBack" onclick="changePageHome()">go back</button>
 
     
     <script src="../js/function.js">

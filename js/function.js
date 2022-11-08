@@ -3,9 +3,10 @@
 // if userinpt = nesw  --> htmlpage
 //
 
-var punch = 0; 
+
 
 console.log(window);
+
 
 function changePageW()
 {
@@ -26,6 +27,10 @@ function changePageN()
 function changePageHome()
 {
     window.location.replace('../index.html')
+}
+function changePageBoss()
+{
+    window.location.replace('./pages/bossFight.html')
 }
 
 
@@ -65,30 +70,61 @@ function wA2()
     w.style.display = "block";
 }
 
-function displayAlert()
+function setPunch()
 {
+    let punch = 0;
     sessionStorage.setItem('punch', JSON.stringify(punch));
-    sessionStorage.punch = Number(sessionStorage.punch) + 25;
-    console.log(sessionStorage.getItem('punch'));
-    /*if (sessionStorage.punch) {
-        sessionStorage.punch = Number(sessionStorage.punch) + 25;
-      } 
-      document.getElementById("punchText").innerHTML = sessionStorage.punch;
-    
-    console.log(punch); */
-    alert("25% power was added!"); 
 
 }
 
-function unBlur()
+function displayAlert()
 {
-    let r = document.getElementsByClassName("btn");
-    console.log(r);
-    for (i = 0; i < r.length; i++){
-        console.log(r[i].style.filter)
-    }
+   punch = Number(sessionStorage.getItem('punch'));
+   punch = punch + 25;
+   sessionStorage.setItem('punch', punch)
+   console.log(punch);
+   alert("25 % power was added!");
     // r.style.filter = "0px";  
     
+}
+
+function unBlur(index)
+{
+    let r = document.getElementsByClassName('btn');
+    r[index].style.filter = "blur(0px)";
+
+}
+function reBlur(index)
+{
+    let r = document.getElementsByClassName('btn');
+    r[index].style.filter = "blur(10px)";
+    
+}
+
+function isOverPercentage()
+{
+    var isOver = false;
+    let g = Number(sessionStorage.getItem('punch'));
+    console.log(g);
+    if(g == 75)
+    {
+        isOver = true; 
+    }
+return isOver;
+}
+
+function finalC()
+{
+    if(isOverPercentage())
+    {
+        let d = document.getElementById("FinalCorrect");
+        d.style.display = "block";
+    }
+    else
+    {
+        let d = document.getElementById("Wrong2");
+        d.style.display = "block";
+    }
 }
 
 

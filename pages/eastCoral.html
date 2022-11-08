@@ -27,8 +27,8 @@
         <div class ="conatiner">
             
             <div id="option-buttons" class="btn-grid">
-                <button class="btn" onclick="changePageHome()">i'm good (swim away)</button>
-                <button class="btn" onclick="correctAnswer()"> sure!</button>
+                <button class="btn" onmouseover="unBlur(0)" onmouseleave="reBlur(0)" onclick="changePageHome()">i'm good (swim away)</button>
+                <button class="btn" onmouseover="unBlur(1)" onmouseleave="reBlur(1)" onclick="correctAnswer()"> sure!</button>
                 
             </div>
 
@@ -39,15 +39,16 @@
                 </h1>
             
                 <div id="option-buttons" class="btn-grid">
-                    <button class="btn" >(be nice) that was funny :D</button>
-                    <button class="btn"  onclick="cA2()">(get angry!!) that was horrendous</button>
+                    <button class="btn" onmouseover="unBlur(0)" onmouseleave="reBlur(0)">(be nice) that was funny :D</button>
+                    <button class="btn" onmouseover="unBlur(1)" onmouseleave="reBlur(1)" onclick="cA2()">(get angry!!) that was horrendous</button>
                    
                 </div>
                 </div>
 
-                <div id="Correct2">
-                    <h1 onmousedown="displayAlert()">
-                        Being angry has given you more motivation to defeat the fisherman
+                <div id="Correct2" onclick="displayAlert()">
+                    
+                    <h1>
+                        Being angry has given you more motivation to defeat the fisherman (Click me!)
                     </h1>
                     
                 

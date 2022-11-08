@@ -35,9 +35,9 @@
 <div class ="conatiner">
     <div id="text">Text</div>
     <div id="option-buttons" class="btn-grid">
-        <button class="btn" onclick="wrongAnswer()">shellsea</button>
-        <button class="btn"  onclick="correctAnswer()">seashell</button>
-        <button class="btn" onclick="wrongAnswer()">chelsea</button>
+        <button class="btn" onmouseover="unBlur(0)" onmouseleave="reBlur(0)" onclick="wrongAnswer()">shellsea</button>
+        <button class="btn"  onmouseover="unBlur(1)" onmouseleave="reBlur(1)" onclick="correctAnswer()">seashell</button>
+        <button class="btn" onmouseover="unBlur(2)" onmouseleave="reBlur(2)" onclick="wrongAnswer()">chelsea</button>
     </div>
 
     
@@ -51,8 +51,8 @@
         <h1>Correct! Do you want this potion that will give you totally awesome powers?</h1>
     
         <div id="option-buttons" class="btn-grid">
-            <button class="btn" onclick="displayAlert()">yes</button>
-            <button class="btn" onclick="wA2()">no</button>
+            <button class="btn" onmouseover="unBlur(0)" onmouseleave="reBlur(0)" onclick="displayAlert()">yes</button>
+            <button class="btn" onmouseover="unBlur(1)" onmouseleave="reBlur(1)" onclick="wA2()">no</button>
            
         </div>
     </div>

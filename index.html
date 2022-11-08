@@ -7,13 +7,13 @@
     <title>document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-<body>
+<body onloadstart="setPunch()">
 
 
 
 <div class="openText">
      <h1>You are a mantis shrimp. You are going about your normal life when you suddenly you hear and feel vibrations coming from a boat. 
-    It's the fisherman, nooo! He's come to take your friends away again. 
+    You look around using your 16 color recepter eyes. It's the fisherman, nooo! He's come to take your friends away again. 
     Enough is enough. Get super angry or help with tasks to power up your punch!</h1>
 </div>
    
@@ -22,18 +22,17 @@
 <div class ="conatiner">
     <div id="text"></div>
     <div id="option-buttons" class="btn-grid">
-        <button class="btn" onmouseover="unBlur()" onclick="changePageN()">North</button>
-        <button class="btn" onmouseover="unBlur()" onclick="changePageS()">South</button>
-        <button class="btn" onmouseover="unBlur()" onclick="changePageE()">East</button>
-        <button class="btn" onmouseover="unBlur()" onclick="changePageW()">West</button>
+        <button class="btn" onmouseover="unBlur(0)" onmouseleave="reBlur(0)" onclick="changePageS()">South</button>
+        <button class="btn" onmouseover="unBlur(1)" onmouseleave="reBlur(1)" onclick="changePageE()">East</button>
+        <button class="btn" onmouseover="unBlur(2)" onmouseleave="reBlur(2)" onclick="changePageW()">West</button>
         
     </div>
 </div>
 
 <div class="punchBox" onmouseover="">
-    <p id="punchText">0</p>
-    <div style="text-align: left;">
-        <img src="images/fist.jpeg" style="width:100px;height:100px;border:10px solid black;">
+    <p id="punchText">FIGHT</p>
+    <div style="text-align: center;">
+        <img src="images/fist.jpeg" onclick="changePageBoss()" style="width:100px;height:100px;border:10px solid black;">
     </div>
  
     

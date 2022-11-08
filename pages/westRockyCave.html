@@ -33,8 +33,8 @@
     <div class ="conatiner">
         <div id="text"></div>
         <div id="option-buttons" class="btn-grid">
-            <button class="btn" onclick="correctAnswer()">(take the risk) sure</button>
-            <button class="btn"onclick="wrongAnswer()" >(play it safe) no thanks</button>
+            <button class="btn" onmouseover="unBlur(0)"  onmouseleave="reBlur(0)" onclick="correctAnswer()">(take the risk) sure</button>
+            <button class="btn" onmouseover="unBlur(1)"  onmouseleave="reBlur(1)" onclick="wrongAnswer()" >(play it safe) no thanks</button>
         </div>
     </div>
 
@@ -43,7 +43,7 @@
         <h1>The electricity gives extra power to your punch!</h1>
     
         <div id="option-buttons" class="btn-grid">
-            <button class="btn" onclick="displayAlert()" ondblclick="changePageHome()">thanks</button>
+            <button class="btn" onclick="displayAlert()">thanks</button>
            
            
         </div>

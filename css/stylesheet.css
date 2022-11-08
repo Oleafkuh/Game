@@ -92,6 +92,13 @@ body
     display: none;
 
 }
+#FinalCorrect
+{
+    background-color: black;
+    color: antiquewhite;
+    display: none;
+
+}
 #Wrong
 {
     background-color: black;
